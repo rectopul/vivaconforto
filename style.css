@@ -1,0 +1,138 @@
+/*
+!
+Theme Name:   Viva Conforto
+Theme URI:    https://vivaconforto.rob/
+Author:       Rogério
+Author URI:   https://vivaconforto.rob/
+Description:  Tema desenvolvido exclusivamente para fins de testes a empresa auaha!
+Version:      1.0.0
+Text Domain:  auaha
+Tags:         e-commerce, vivaconforto, auaha, Rogério Bonfim, Testes, travesseiros, nasa
+*/
+
+/* COMPONENTS */
+
+/* MENU */
+@import url('assets/css/base/nav-menu.css');
+/* SEARCHFORM MENU */
+@import url('assets/css/base/form-search-nav-menu.css');
+/* LOGO MENU */
+@import url('assets/css/base/custom-logo.css');
+/* Menu categorias */
+@import url('assets/css/base/menu-cat.css');
+/* Banner Home */
+@import url('assets/css/base/slider-home.css');
+/* Slide Parceiros */
+@import url('assets/css/base/slide-partners.css');
+/* News */
+@import url('assets/css/base/news.css');
+/* Indicações */
+@import url('assets/css/base/indica.css');
+/* Dicas de pagamento */
+@import url('assets/css/base/tips.css');
+/* Footer */
+@import url('assets/css/base/footer.css');
+/* Menu mobile */
+@import url('assets/css/base/menu-mobile.css');
+/*Single Product page*/
+@import url('assets/css/base/single-product.css');
+
+
+body {
+	font-family: 'Montserrat', sans-serif !important;
+	font-size: 14px;
+}
+
+.bord-bottom {
+  border-bottom: 1px solid #d1e1ef;
+  padding-bottom:30px;
+  position: relative;
+}
+
+/* 
+ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+@media screen and (max-width: 1024px) {
+  .separator{
+    display: none;
+  }
+  .custom-menu-search li{ margin-left: 10px; }
+
+  .slider-min-img img{
+    width: 100%;
+  }
+  .indica > div > div > div {
+    flex: 0 0 33.333333%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* all navs */
+  .header-main-theme{
+    display: none;
+  }
+  .button-menu-mobile{ visibility: visible; }
+
+  /* Custom logo */
+  .custom-logo > div {
+      margin: 20px auto;
+  }
+
+  .header-main-theme > nav,
+  body .mn-cat{ display: none; }
+
+  body .slid-contact .slide-parceiros,
+  div > .slid-contact .form-mail-news{
+    margin: 20px 0;
+  }
+
+  div > .slid-contact .form-mail-news{
+    padding: 0 15px;
+  }
+
+  .slid-contact .slide-parceiros .arrow-next{
+    right: 0;
+  }
+
+  .slid-contact{
+    height: auto;
+  }
+
+  .indica > div > div > div {
+    flex: 0 0 50%;
+  }
+
+  /* tips */
+  .payment-tip > div{
+    flex-flow: row wrap;
+    height: auto;
+  }
+  .payment-tip > div > div{
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  .lists-footer > div{
+    flex-flow: row wrap;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .indica > div > div > div {
+    flex: 0 0 100%;
+  }
+  .lists-footer > div > div{
+    flex: 0 0 50%;
+  }
+
+  .form-mail-news > div > div:first-child{ display: none; }
+
+  .lists-footer > div > div{ padding: 15px; }
+  .selos section{ position:relative; bottom: initial;}
+  body .cont-slide{ padding: 20px; }
+  .selos img{vertical-align: top;}
+  .left-trans{left: 15px;}
+  .right-trans{right: 15px;}
+}

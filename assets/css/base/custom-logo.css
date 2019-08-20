@@ -1,0 +1,15 @@
+.header-main-theme { 
+    border-bottom: 1px solid #d1e1ef;
+    padding: 2.5px 0;
+}
+.custom-logo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.custom-logo > div {
+    align-self: center;
+    line-height: 80px;
+}

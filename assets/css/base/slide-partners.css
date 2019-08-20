@@ -1,0 +1,41 @@
+.slid-contact{
+    height: 135px;
+    border-bottom: 1px solid #d1e1ef;
+}
+
+body .slid-contact .slide-parceiros {
+    padding:0 15px;
+    align-self: center;
+    height: 45px;
+}
+
+.slide-parceiros div .swiper-slide{ width: auto; }
+
+.slide-parceiros div { height: 100%; }
+.slide-parceiros div img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slid-contact .slide-parceiros .arrow-next,
+.slid-contact .slide-parceiros .arrow-prev{
+    background-image: url('../../images/arrow.png');
+    background-position: center center;
+    background-size: cover;
+    width: 11px;
+    height: 15px;
+    margin-top: -7.5px;
+}
+
+.slid-contact .slide-parceiros .arrow-next{ right: 15px; }
+.slid-contact .slide-parceiros .arrow-prev{ 
+    left: -15px; 
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+/* Carrosel */

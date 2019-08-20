@@ -1,0 +1,4 @@
+.woocommerce div.product div.images img {
+    width: 300px;
+    height: auto;
+}

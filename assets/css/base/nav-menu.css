@@ -1,0 +1,132 @@
+.header-main-theme { 
+    display: flex;
+    max-height: 85px;
+}
+
+.header-main-theme > div,
+.header-main-theme > nav { max-height: 85px; }
+.header-main-theme > nav {
+    flex: 1;
+    justify-content: space-between;
+}
+
+.menu-container{ padding: 0 !important;}
+.menu-flex,
+.menu-user-flex {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.menu-flex {
+    justify-content: flex-start;
+}
+
+.menu-user-flex {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* MENU DE USUARIO */
+.menu-user-flex li {
+    flex-grow: 0;
+    max-width: 290px;
+    letter-spacing: -0.2px;
+    line-height: 16px;
+    align-self: baseline;
+    max-height: 85px;
+    position: relative;
+    color: #248ba7;
+}
+
+.menu-user-flex li a{ color: #248ba7; }
+
+.menu-user-flex li:nth-child(2) span{ color: #175186; }
+
+.menu-user-flex li:first-child { color: #175186; }
+.menu-user-flex li:last-child { font-size: 0; line-height: 34px; }
+.menu-user-flex li:nth-child(2) {
+    align-self: center;
+    line-height: 16px;
+    text-align: left;    
+}
+
+.menu-user-flex li:nth-child(2) a{ margin-right: 5px; }
+
+.helcome{
+ display: block;
+}
+
+/* .menu-user-flex li:first-child > a{  } */
+.menu-user-flex li:last-child > a{ font-size: 11.8px; margin-left: 5px; }
+
+  
+.menu-flex li {
+    max-width: 290px;
+    letter-spacing: 0;
+    line-height: 85px;
+    max-height: 85px;
+    padding: 0 16.5px;
+    position: relative;
+}
+
+.menu-flex li:first-child{ padding-left: 0; }
+.menu-flex li:last-child{ padding-right: 0; }
+
+.profile-menu {
+    content: '';
+    background: #fff url('../../images/user.svg') no-repeat center center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    line-height: 26px;
+    vertical-align: -38px;
+}
+
+.menu-flex li a{
+    color: #175186;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.header-main-theme > nav ul { font-size: 11.8px; }
+/* Hover */
+
+.header-main-theme > nav ul li a:hover{ text-decoration: none; }
+
+.target {
+    position: absolute;
+    border-bottom: 4px solid transparent;
+    z-index: -1;
+    transform: translateX(-60px);
+  }
+   
+.menu-container-effect a,
+.target {
+    transition: all .35s ease-in-out;
+}
+
+/* Menu SEARCH  and CART*/
+
+.custom-menu-search {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-height: 85px;
+}
+
+.custom-menu-search li {
+    align-self: center;
+    flex-basis: auto;
+    max-height: 85px;
+}

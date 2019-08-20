@@ -1,0 +1,32 @@
+.payment-tip > div{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    color: #175186;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.payment-tip > div > div {
+    flex: 0 0 auto;
+    height: auto;
+    display: inline-block;
+    line-height: 29px;
+}
+
+.payment-tip > div > div img{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin-right: 12px;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.payment-tip{
+    padding: 16px 0;
+}

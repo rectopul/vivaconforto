@@ -1,0 +1,160 @@
+.color-blue {
+    background-color: #275e90;
+    color: #ffffff;
+}
+.color-blue,
+.color-blue a{ color: #ffff; }
+
+.color-blue section {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.color-blue > div { 
+    padding:40px 0; 
+    height: auto;
+}
+
+.lists-footer > div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.lists-footer > div > div:first-child{padding-left: 15px;}
+
+.lists-footer > div > div { 
+    padding: 0;
+    max-width: initial;
+}
+
+nav.menu-vertical > ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    height: auto;
+    padding: 0;
+}
+
+nav.menu-vertical > ul li{
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    line-height: 21px;
+}
+
+nav.menu-vertical > ul li a{
+    color: #fff;
+}
+
+/* Atendimento */
+
+.atendimento{ 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.atendimento li {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.atendimento li small{
+    font-size: 11px;
+    font-weight: 600;
+    display: block;
+}
+
+.atendimento li h1{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+/* .atendimento .phone-list,
+.atendimento .whats-list,
+.atendimento .mail-list{
+    padding-left: 15px;
+} */
+
+.atendimento .mail-list::before{
+    content: '';
+    width: 15px;
+    height: 10px;
+    display: inline-block;
+    background: transparent url(../../images/mail.png) center no-repeat;
+    vertical-align: middle;
+    margin-top: -2.5px;
+}
+
+.atendimento .whats-list::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: transparent url(../../images/whats.png) center no-repeat;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+.atendimento .phone-list::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: transparent url(../../images/phone.png) center no-repeat;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+/* Pagamentos */
+
+.pay{
+    text-align: right;
+    width: auto;
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.pay > div{
+    text-align: left;
+}
+
+.selos{ margin-top: 30px; }
+
+.selos section{
+    position: absolute;
+    bottom: 48px;
+    margin-bottom: 0;
+}
+
+.selos img{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 15px;
+}
+
+/* Copyright */
+
+.copyright{
+    text-align: center;
+    padding: 35px 0;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    color: #98a0a2;
+}

@@ -1,0 +1,180 @@
+.conainer-options-theme *,
+.conainer-options-theme
+{
+    box-sizing: border-box;
+}
+
+.conainer-options-theme{
+    margin: 25px 20px 0 2px;
+    display: block;
+}
+
+.wraper-options-theme{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.wraper-options-theme > ul 
+{   
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    border-bottom: 1px solid #ccc;    
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.71428571;
+    text-align: center;
+}
+
+.wraper-options-theme > ul > li
+{
+    margin-left: .5em;
+    margin-bottom: 0;
+    padding: 5px 10px;
+    background-color: #e5e5e5;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.wraper-options-theme > ul > li.option-active
+{
+    background-color: #f1f1f1;
+    margin-bottom: -1px;
+    cursor: default;
+}
+
+.wraper-options-content > .slides
+{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 30px 0;
+}
+.wraper-options-content .slides  header {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.wraper-options-content .slides > div
+{       
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.wraper-options-content .slides  header,
+.wraper-options-content .slides label
+{
+    color: #000;
+    font-weight: 600;
+}
+
+.wraper-options-content .slides > button
+{   
+    flex: 0 0 auto;
+    width: 130px;
+    border-radius: 5px;
+    padding: 0 12px 2px;
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    height: 30px;
+    outline: none;
+    margin-top: 20px;
+}
+
+.wraper-options-content .slides > div{
+    display: block;
+    transition: max-height 500ms cubic-bezier(0.22, 0.61, 0.36, 1);
+    width: 100%;    
+    margin-top: -1px;
+    padding-bottom: 15px;    
+    max-height: 50px;
+    overflow-y: hidden;
+}
+
+.wraper-options-content .slides > div.slideactived{
+    max-height: 600px;
+    transition: max-height 2000ms linear;
+}
+
+.wraper-options-content .slides label{
+    font-size: 15px;
+    display: block;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    padding: 15px;
+    height: 50px;
+}
+
+.wraper-options-content .slides > div span button
+{
+    width: auto;
+    height: 30px;
+    text-align: center;
+    outline: none;
+    color: #fff;    
+    border-radius: 3px;    
+    -webkit-appearance: none;
+    border-width: 1px;
+    border-style: solid;
+    vertical-align: middle;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.wraper-options-content .slides > div span button.img-select
+{
+    border-color: #00994A #008C44 #008C44;
+    box-shadow: 0 1px 0#008C44;
+    text-shadow: 0 -1px 1px #008C44, 1px 0 1px #008C44, 0 1px 1px #008C44, -1px 0 1px #008C44;
+    background-color: #00B133;
+}
+
+.wraper-options-content .slides > div span button.img-remove
+{
+    border-color: #D1281F #991D17 #991D17;
+    box-shadow: 0 1px 0#991D17;
+    text-shadow: 0 -1px 1px #991D17, 1px 0 1px #991D17, 0 1px 1px #991D17, -1px 0 1px #991D17;
+    background-color: #FF3126;
+}
+
+.wraper-options-content .slides > div span button:hover{
+    opacity: .9;
+}
+
+.img-default{
+    background-color: #FAFAFA;
+    padding: 15px;
+    border: 1px solid #ccc;
+    height: auto;
+    line-height: 75px;
+    margin-top: -1px;
+}
+
+.img-default img
+{
+    width: 70px;
+    height: auto;
+    display: inline-block;
+    background-color: #FAFAFA;
+    padding: 2px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
